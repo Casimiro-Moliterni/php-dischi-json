@@ -3,13 +3,18 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-          ciao:'test'
+          music:[]
         };
     },
     methods: {
-        
+        generateToMusicApi(){
+          axios.get('../files/dischi.php')
+          .then((response)=>{
+            this.music=response.data;
+          })
+        }
     },
     mounted() {
-        console.log('test');
+        this.generateToMusicApi()
     }
 }).mount('#app');

@@ -18,15 +18,32 @@
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 
-<body>
+<body class="ms_bg_body">
     <div id="app">
-        <header class="ms_bg_header">
-            <div class="container p-3 ">
-                <div class="image">
-                    <img src="" alt="">
+        <header class="">
+            <div class="container-sm ms_bg_header d-flex align-items-center ps-5">
+                <div class="ms_image ms-5">
+                    <img src="https://m.media-amazon.com/images/I/51rttY7a+9L.png" alt="">
                 </div>
             </div>
         </header>
+        <main class="text-white ">
+            <section >
+                <div class="container-sm ms_bg_main p-3 ms_main">
+                    <div class="row ms_row  ">
+                        <div class="col-4 mb-5">
+                            <div class="card pt-3 ps-5 pe-5 ms_bg_card" style="width: 18rem;">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center ">
+                                    <h3>Title</h3>
+                                    <h4>Name Singer</h4>
+                                    <h3>date</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
         <script src="js/script.js" type="text/javascript"></script>
     </div>
 </body>

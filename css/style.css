@@ -1,4 +1,32 @@
 /* color bg  */
+.ms_bg_body{
+    background-color: #0E0E0E;
+}
 .ms_bg_header{
-   background-color: red;
+   background-color:#06131F;
+   height: 80px;
+}
+.ms_bg_main{
+background-color: #1D2D3C;
+}
+.ms_row{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.ms_bg_card{
+    background-color: #112030;
+    border: none;
+    color: white;
+}
+.ms_main{
+    height: calc(100vh - 80px);
+}
+.ms_image{
+    height: 50px;
+}
+
+.ms_image img{
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
 }
