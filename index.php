@@ -29,15 +29,16 @@
         </header>
         <main class="text-white ">
             <section >
-                <div class="container-sm ms_bg_main p-3 ms_main">
+                <div class="container-sm ms_bg_main p-3 ">
                     <div class="row ms_row  ">
-                        <div class="col-4 mb-5">
+                        <div class="col-4 mb-5" v-for="card in music">
                             <div class="card pt-3 ps-5 pe-5 ms_bg_card" style="width: 18rem;">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="...">
+                                <img :src="card.poster" class="card-img-top" alt="...">
                                 <div class="card-body text-center ">
-                                    <h3>Title</h3>
-                                    <h4>Name Singer</h4>
-                                    <h3>date</h3>
+                                    <div class="fs-5 fw-medium">{{card.title}}</div>
+                                    <small>{{card.author}}</small>
+                                    <div>{{card.year}}</div>
+                                    <div><small>{{card.genre}}</small></div>
                                 </div>
                             </div>
                         </div>

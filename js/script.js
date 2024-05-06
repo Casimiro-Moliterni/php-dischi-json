@@ -8,9 +8,9 @@ createApp({
     },
     methods: {
         generateToMusicApi(){
-          axios.get('../files/dischi.php')
+          axios.get('./files/dischi.php')
           .then((response)=>{
-            this.music=response.data;
+          this.music = response.data;
           })
         }
     },

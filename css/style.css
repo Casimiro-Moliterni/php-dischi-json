@@ -17,10 +17,9 @@ background-color: #1D2D3C;
     background-color: #112030;
     border: none;
     color: white;
+    height: 400px;
 }
-.ms_main{
-    height: calc(100vh - 80px);
-}
+
 .ms_image{
     height: 50px;
 }

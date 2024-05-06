@@ -43,6 +43,9 @@ $discs = [
         "genre" => "Rock"
     ]
 ];
-header('Content-type: application/json');
-echo json_encode($discs);
+$music_json = file_get_contents('dischi.json');
+$music = json_decode($music_json, true);
+
+header('Content-Type: application/json');
+echo json_encode($music);
 ?>
